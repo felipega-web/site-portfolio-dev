@@ -3,11 +3,11 @@
 }
 
 :root {
-  --principal-red: #e3646e;
-  --principal-purple: #bb72e9;
-  --principal-blue: #3996db;
-  --principal-green: #82bc4f;
-  --principal-yellow: #eabd5f;
+  --main-red: #e3646e;
+  --main-purple: #bb72e9;
+  --main-blue: #3996db;
+  --main-green: #82bc4f;
+  --main-yellow: #eabd5f;
 
   --base-gray-100: #e2e4e9;
   --base-gray-200: #c0c4ce;
@@ -20,14 +20,14 @@
   --ff-02: 'Inconsolata', monospace;
   --ff-03: 'Maven Pro', sans-serif;
 
-  --title-lg: 5.6rem 120% 700 var(--ff-01);
-  --title-md: 2.4rem 120% 700 var(--ff-01);
-  --title-sm: 1.6rem 120% 700 var(--ff-01);
+  --title-lg: 700 5.6rem/1.2 var(--ff-01);
+  --title-md: 700 2.4rem/1.2 var(--ff-01);
+  --title-sm: 700 1.6rem/1.2 var(--ff-01);
 
-  --subtitle: 2rem 120% 400 var(--ff-02);
+  --subtitle: 400 2rem/1.2 var(--ff-02);
 
-  --text-md: 1.6rem 140% 400 var(--ff-03);
-  --text-sm: 1.4rem 140% 400 var(--ff-03);
+  --text-md: 400 1.6rem/1.4 var(--ff-03);
+  --text-sm: 400 1.4rem/1.4 var(--ff-03);
 
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
@@ -39,4 +39,91 @@ body {
 
 html {
   font-size: 62.5%;
+}
+
+/* Global */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header */
+.header {
+  background-image: url('./assets/Background_Intro.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100svh;
+}
+
+.header__main {
+  max-width: 68rem;
+}
+
+.header__main__image {
+  margin-top: 12rem;
+  width: 11.2rem;
+}
+
+.header__main__subtitle {
+  font: var(--subtitle);
+  color: var(--base-gray-200);
+  margin-top: 6.4rem;
+}
+
+.header__main__subtitle-name {
+  font: inherit;
+  color: var(--main-red);
+}
+
+.header__main__title-lg {
+  font: var(--title-lg);
+  color: var(--base-gray-100);
+  margin-top: 0.8rem;
+}
+
+.header__main__text {
+  font: var(--text-sm);
+  color: var(--base-gray-300);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.header__main__tags {
+  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 77rem;
+}
+
+.header__main__tags__tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--base-gray-400);
+  height: 4rem;
+  margin-right: 1.6rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+}
+
+.header__main__tags__tag-image {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.header__main__tags__tag-text {
+  font: var(--text-md);
+  color: var(--base-gray-200);
+  margin-left: 0.8rem;
+}
+
+.header__link {
+  margin-top: 9.4rem;
 }
