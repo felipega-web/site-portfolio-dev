@@ -166,6 +166,10 @@ html {
   border-radius: 1.2rem;
 }
 
+.projects__grid__card:hover {
+  border: solid 1.5px var(--base-gray-300);
+}
+
 .projects__grid__card-link {
   text-decoration: none;
 }
@@ -282,9 +286,18 @@ html {
   padding: 2rem;
 }
 
+.contact__links-socialButton:hover {
+  border: 1.5px solid var(--main-blue);
+}
+
 .contact__links-socialButton-image {
   width: 2.8rem;
   height: 2.8rem;
+}
+
+.contact__links-socialButton-image:hover {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(52%) saturate(567%)
+    hue-rotate(174deg) brightness(92%) contrast(93%);
 }
 
 .contact__links-socialButton-text {
